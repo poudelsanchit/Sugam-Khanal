@@ -1,5 +1,5 @@
 import React from 'react';
-import MainPhoto from '../assets/logo.jpeg';
+import MainPhoto from '../assets/logo.jpg';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 const Home = () => {
     const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -20,7 +20,7 @@ const Home = () => {
                         </div>
                     </Animator>
                 </ScrollPage>
-
+{/* 
                 <ScrollPage className='bg-text-secondary'>
                     <Animator animation={batch(Fade(), ZoomIn())}>
                         <span style={{ fontSize: "40px" }}>Done</span>
@@ -29,7 +29,7 @@ const Home = () => {
                             There's FadeAnimation, MoveAnimation, StickyAnimation, ZoomAnimation
                         </span>
                     </Animator>
-                </ScrollPage>
+                </ScrollPage> */}
 
             </ScrollContainer>
         </>
