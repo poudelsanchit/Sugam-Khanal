@@ -10,14 +10,17 @@ const Home = () => {
             <ScrollContainer className="bg-bg-dark text-text-primary">
 
                 <ScrollPage >
-                    <Animator animation={batch(FadeUp)} className='w-9/12 flex flex-col l:flex-row  justify-between items-center'>
-                        <div className='w-max flex flex-col gap-10 text-5xl l:text-6xl lg:text-7xl font-Roboto font-bold  justify-center items-start'>
-                            <p>HI,I'M</p>
-                            <p>  SUGAM KHANAL </p>
+                    <Animator animation={batch(FadeUp)} className='w-full flex flex-col   justify-center items-center gap-10'>
+                       <div className='w-9/12 flex gap-10 flex-col sm:flex-row'>
+                         <div className='w-full sm:w-1/2  flex flex-col sm:flex-col  sm:text-7xl  gap-3  text-4xl  font-Roboto font-bold  justify-center items-start'>
+                            <span>HI,I'M</span> 
+                            <span>SUGAM KHANAL </span>
                         </div>
-                        <div className="flex flex-row w-96 justify-center">
-                            <img src={MainPhoto} alt="" className='rounded-md w-4/5' />
+                        <div className="flex flex-row sm:w-1/2  w-full justify-center">
+                            <img src={MainPhoto} alt="" className='rounded-md w-full  object-cover sm:w-8/12' />
                         </div>
+                        </div>
+                       
                     </Animator>
                 </ScrollPage>
 {/* 
